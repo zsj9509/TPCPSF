@@ -72,5 +72,3 @@ if mod(n3,2) == 0
 end
 tnn = tnn/n3;
 X = ifft(X,[],3);
-% realornot=isreal(X);
-% disp(realornot)
