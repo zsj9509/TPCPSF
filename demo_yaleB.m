@@ -15,7 +15,6 @@ Xn(ind) = rand(length(ind),1);
 TXn = reshape(Xn,[192 168 64]);
 clear ind rhos
 num = 25;
-clear ind rhos
 raw_picshow = reshape(M(:,num),[n1 n2]);
 figure,imshow(raw_picshow,'border','tight','initialmagnification','fit');
 set (gcf,'Position',[0,0,168,192]);
@@ -24,7 +23,6 @@ noisy_picshow = reshape(Xn(:,num),[n1 n2]);
 figure,imshow(noisy_picshow,'border','tight','initialmagnification','fit');
 set (gcf,'Position',[0,0,168,192]);
 axis normal
-clear ind 
 
 load yaleB06_selected16.mat
 Side_origion = repmat(img, [1,4]) ./ 255;
